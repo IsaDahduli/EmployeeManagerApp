@@ -13,7 +13,7 @@
             android:theme="@style/Theme.EmployeeManagerApp"
             tools:targetApi="31">
         <activity
-                android:name=".MainActivity"
+                android:name=".MainMenuActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -21,6 +21,21 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+                android:name=".AdminActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".AdminLoginActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".AdminAddUpdateEmployeeActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".ViewAllEmployeesActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".EmployeeLoginActivity"
+                android:exported="false"/>
     </application>
 
 </manifest>

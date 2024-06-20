@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">Employee Manager App</string>
+
+    <string-array name="JobTitle">
+        <item>CEO</item>
+        <item>COO</item>
+        <item>CFO</item>
+        <item>Secretary</item>
+        <item>Business systems analyst</item>
+        <item>Content manager</item>
+        <item>Content strategist</item>
+        <item>Database administrator</item>
+        <item>Digital marketing manager</item>
+        <item>Full stack developer</item>
+        <item>Information architect</item>
+        <item>Marketing technologist</item>
+        <item>Mobile developer</item>
+        <item>Project manager</item>
+        <item>Social media manager</item>
+        <item>Software engineer</item>
+        <item>Systems engineer</item>
+        <item>Software developer</item>
+        <item>Systems administrator</item>
+        <item>User interface specialist</item>
+        <item>Web analytics developer</item>
+        <item>Web developer</item>
+        <item>Webmaster</item>
+    </string-array>
+
+    <string-array name="BaseSalary">
+        <item>2500</item>
+        <item>5000</item>
+        <item>7000</item>
+        <item>10000</item>
+        <item>15000</item>
+    </string-array>
+
 </resources>
