@@ -48,13 +48,21 @@
                         android:textStyle="bold"
                         android:layout_marginTop="15dp"/>
 
-                <EditText
-                        android:id="@+id/edit_text_first_name"
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_first_name"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Add a first name"
-                        android:maxLines="1"
-                        android:singleLine="true"/>
+                        android:layout_marginTop="5dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_text_first_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Add a first name"
+                            android:maxLines="1"
+                            android:singleLine="true"/>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
                         android:text="Enter Last Name: "
@@ -65,13 +73,21 @@
                         android:textStyle="bold"
                         android:layout_marginTop="15dp"/>
 
-                <EditText
-                        android:id="@+id/edit_text_last_name"
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_last_name"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Add Last Name"
-                        android:maxLines="1"
-                        android:singleLine="true"/>
+                        android:layout_marginTop="5dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_text_last_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Add Last Name"
+                            android:maxLines="1"
+                            android:singleLine="true"/>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
                         android:text="Enter Employee Password: "
@@ -82,13 +98,21 @@
                         android:textStyle="bold"
                         android:layout_marginTop="15dp"/>
 
-                <EditText
-                        android:id="@+id/edit_text_employeepassword"
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_employeepassword"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Password"
-                        android:maxLines="1"
-                        android:singleLine="true"/>
+                        android:layout_marginTop="5dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_text_employeepassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:maxLines="1"
+                            android:singleLine="true"/>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <LinearLayout
                         android:layout_width="wrap_content"
@@ -111,7 +135,6 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:paddingRight="25dp">
-
 
                         <RadioButton
                                 android:id="@+id/radio_true"
@@ -145,14 +168,25 @@
                         android:layout_height="wrap_content"
                         android:paddingBottom="5px">
 
-                    <EditText
-                            android:id="@+id/edit_text_hire_date"
-                            android:hint="Date"
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_hire_date"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="wrap_content"
                             android:layout_weight="8"
                             android:layout_height="wrap_content"
-                            android:focusable="false"
-                            android:gravity="left" />
+                            android:layout_marginTop="5dp">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edit_text_hire_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Date"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:focusable="false"
+                                android:gravity="left"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
                     <ImageView
                             android:id="@+id/image_view_date"
                             android:src="@android:drawable/ic_menu_today"
@@ -179,14 +213,22 @@
                         android:drawSelectorOnTop="true"
                         android:layout_marginTop="5dp"/>
 
-                <EditText
-                        android:id="@+id/edit_text_jobtitle"
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_jobtitle"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Job Title"
-                        android:focusable="false"
-                        android:maxLines="1"
-                        android:singleLine="true"/>
+                        android:layout_marginTop="5dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_text_jobtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Job Title"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:focusable="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
                         android:text="Enter Salary: "
@@ -206,14 +248,22 @@
                         android:drawSelectorOnTop="true"
                         android:layout_marginTop="5dp"/>
 
-                <EditText
-                        android:id="@+id/edit_text_salary"
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_salary"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Salary"
-                        android:maxLines="1"
-                        android:focusable="false"
-                        android:singleLine="true"/>
+                        android:layout_marginTop="5dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_text_salary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Salary"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:focusable="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
                         android:id="@+id/btn_add_update_employee"
@@ -222,9 +272,8 @@
                         android:background="@drawable/projectbuttons"
                         android:text="Add"
                         android:textColor="#fff"
-                        android:textSize="15sp" />
-
-
+                        android:textSize="15sp"
+                        android:layout_marginTop="15dp"/>
 
             </LinearLayout>
 
